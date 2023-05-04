@@ -1,0 +1,8 @@
+@font-face {
+  font-family: "Jokerman Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/Jokerman Regular.eot?#iefix") format("embedded-opentype"), 
+  url("../fonts/Jokerman Regular.woff") format("woff"),
+  url("../fonts/Jokerman Regular.ttf") format("truetype"); 
+  }
