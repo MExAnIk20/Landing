@@ -1,0 +1,116 @@
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, p, table, th, td, header, label, a, hr{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins-Regular";
+}
+ul, ol{
+    list-style-type: none;}
+a{
+    color: black;
+    text-decoration: none;}
+.container{
+    max-width: 1338px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin: 0 auto;
+}
+.col-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+.offset-md-2{
+    margin-right: 16.666667%;
+}
+.row{
+    display: flex;
+    align-items: center;
+}
+header{
+    display: flex;
+    align-items: center;
+    margin: 55px 0;
+}
+#checked-menu{
+    display: none;
+}
+label{
+    display: none;
+    cursor: pointer;
+}
+.header-menu{
+    display: block;
+    position: relative;
+}
+.burger-line{
+    background-color: #39515E;
+    display: block;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    width: 30px;
+    height: 3px;
+    border-radius: 4px;
+}
+.burger-line::before, .burger-line::after{
+    background-color: #39515E;
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+    transition: all .3s;
+}
+.burger-line::before{
+    top: 8px;
+    width: 21px;
+}
+.burger-line::after{
+    top: -8px;
+}
+.Brit, .lex{
+    font-size: calc(30px + (36 - 30) * ((100vw - 1200px) / (1600 - 1200)));
+    line-height: calc(45px + (54 - 45) * ((100vw - 1200px) / (1600 - 1200)));
+}
+.lex{
+    color: #939393;
+}
+.header-menu, footer{
+    flex: 1;
+}
+ul{
+    display: flex;
+    color: #263238;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: bold;
+}
+ul li:nth-child(1), ul li:nth-child(2), ul li:nth-child(4){
+    margin-right: 36px;
+}
+ul li:nth-child(3){
+    margin-right: 60px;
+}
+.Talk{
+    border: 2px solid #263238;
+    border-radius: 5px;
+    padding: 17px 57px 15px;
+    font-size: 24px;
+    line-height: 36px;
+}
+h1{
+    font-size: 64px;
+    line-height: 80px;
+}
+footer{
+    display: flex;
+    align-items: center;
+    margin: 31px 0 64px 0;
+}
+footer a{
+    flex: 1;
+}
+footer p a{
+    font-size: 24px;
+    color: #8F95A5;
+}
