@@ -14,21 +14,41 @@ a{
     padding-left: 15px;
     margin: 0 auto;
 }
-.col-6 {
+.col-4{
+    -ms-flex: 0 0 33.333333%;
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+}
+.col-6{
+    -ms-flex: 0 0 50%;
     flex: 0 0 50%;
     max-width: 50%;
+}
+.col-md-7{
+    -ms-flex: 0 0 58.333333%;
+    flex: 0 0 58.333333%;
+    max-width: 58.333333%;
+}
+.offset-md-1{
+    margin-left: 8.333333%;
 }
 .offset-md-2{
     margin-right: 16.666667%;
 }
 .row{
     display: flex;
-    align-items: center;
+    flex-wrap: wrap;
 }
+img{
+    max-width: 100%;
+}
+/* Все что выше это настройка для удобного верстания*/
+/* Шапка и меню сайта */
 header{
     display: flex;
     align-items: center;
     margin: 55px 0;
+    gap: 10px;
 }
 #checked-menu{
     display: none;
@@ -78,6 +98,9 @@ label{
 .header-menu, footer{
     flex: 1;
 }
+.ot-brit{
+    margin-right: calc(167px + (253 - 167) * ((100vw - 992px) / (1600 - 992)));
+}
 ul{
     display: flex;
     color: #263238;
@@ -86,10 +109,10 @@ ul{
     font-weight: bold;
 }
 ul li:nth-child(1), ul li:nth-child(2), ul li:nth-child(4){
-    margin-right: 36px;
+    margin-right: calc(25px + (36 - 25) * ((100vw - 1200px) / (1600 - 1200)));
 }
 ul li:nth-child(3){
-    margin-right: 60px;
+    margin-right: calc(45px + (60 - 45) * ((100vw - 1200px) / (1600 - 1200)));
 }
 .Talk{
     border: 2px solid #263238;
@@ -102,6 +125,78 @@ h1{
     font-size: 64px;
     line-height: 80px;
 }
+h2{
+    font-size: 48px;
+    line-height: 80px;
+}
+h3{
+    font-size: 30px;
+    line-height: 80px;
+    color: #263238;
+}
+h4{
+    font-size: 30px;
+    line-height: 48px;
+    color: #263238;
+}
+    /* Тело сайта*/
+.header-skills{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 2fr, 1fr;
+    gap: 2%;
+}
+.Speaking{
+	grid-column: 1/2;
+    grid-row: 1/3;
+}
+.Writing{
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+.Reading{
+    grid-column: 3/4;
+    grid-row: 1/2;
+}
+.Listening{
+    grid-column: 2/4;
+    grid-row: 2/3;
+}
+.gray-box{
+    background-color: #F5F5F5;
+    border-radius: 10px;
+}
+.box-about{
+    display: flex;
+    align-items: center;
+}
+.Numbers{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
+}
+.Pricing{
+    display: flex;
+    align-items: baseline;
+}
+.price{
+    background: #EEEEEE;
+    border-radius: 5px;
+    padding: 15px 20px 5px;
+}
+.body-price{
+    font-size: 30px;
+    line-height: 45px;
+    color: #263238;
+    margin-right: 5px;
+}
+sup{
+    font-size: 18px;
+    line-height: 27px;
+    color: #546269;
+}
+
+    /* Подвал сайта*/
 footer{
     display: flex;
     align-items: center;

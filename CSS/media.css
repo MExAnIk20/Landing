@@ -11,6 +11,9 @@
 	.container{
 		max-width: 929px;
 	}
+	.ot-brit{
+		margin-right: calc(80px + (167 - 140) * ((100vw - 768px) / (992 - 768)));
+	}
 	ul{
 		font-size: 16px;
 	}
@@ -21,7 +24,12 @@
 		margin-right: 40px;
 	}
 	.Talk{
-		padding: 12px 40px 11px 40px;
+		font-size: calc(18px + (24 - 18) * ((100vw - 768px) / (992 - 768)));
+    	line-height: calc(27px + (36 - 27) * ((100vw - 768px) / (992 - 768)));
+		padding-top: calc(11px + (12 - 11) * ((100vw - 768px) / (992 - 768)));
+		padding-bottom: calc(10px + (11 - 10) * ((100vw - 768px) / (992 - 768)));
+		padding-left: calc(30px + (40 - 30) * ((100vw - 768px) / (992 - 768)));
+		padding-right: calc(30px + (40 - 30) * ((100vw - 768px) / (992 - 768)));
 	}
 	footer p a{
 		font-size: 16px;
