@@ -5,17 +5,18 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Landing</title>
 	<link rel="stylesheet" type="text/css" href="css/fonts.css">
+	<link rel="stylesheet" type="text/css" href="CSS/grid.css">
 	<link rel="stylesheet" type="text/css" href="CSS/styles.css">
 	<link rel="stylesheet" type="text/css" href="CSS/media.css">
 </head>
 <body>
 <div class="container">
 	<header>
-		<a href="#" class="ot-brit"><span class="Brit">Brit</span><span class="lex">lex</span></a>
+		<a href="#" class="ot-brit index"><span class="Brit">Brit</span><span class="lex">lex</span></a>
 		<div class="header-menu">
 			<input type="checkbox" id="checked-menu">
 			<label for="checked-menu"><span class="burger-line"></span></label>
-				<ul>
+				<ul class="menu">
 					<li><a href="#">Home</a></li>
 					<li><a href="#">Skills </a></li>
 					<li><a href="#">About Us</a></li>
@@ -26,17 +27,18 @@
 		<a href="#" class="Talk">Let’s Talk</a>
 	</header>
 	<div class="row">
-		<div class="col-6">
-			<h1 class="offset-md-2">Learn Any Foreign Language <img src="img/bulb.png" alt="alt"></h1>
-			<p>With our teachers who write a program for each student, you will be able to make your first sketch after the first lesson.</p>
-			<a href="#">Get started</a>
+		<div class="col-5 relative top-Learn">
+			<h1>Learn <br> Any Foreign Language</h1>
+			<img src="img/bulb.png" alt="alt">
+			<p class="text-prog">With our teachers who write a program for each student, you will be able to make your first sketch after the first lesson.</p>
+			<a href="#" class="bt-started">Get started</a>
 		</div>
-		<div class="col-6">
+		<div class="col-6 offset-md-1">
 			<img src="img/Learning.png" alt="alt">
 		</div>
 	</div>
-	<div class="row">
-		<h2>Skills</h2>
+	<div class="row content-center">
+		<h2 class="Skil">Skills</h2>
 	</div>
 	<div class="row">
 		<div class="header-skills">
@@ -50,7 +52,7 @@
 				Learn English online and improve your 
 				skills through our high-quality courses
 				and resources – all designed for adult language learners.</p>
-				<a href="#">Learn more</a>
+				<a href="#" class="Learn-more">Learn more</a>
 			</div>
 			<div class="Writing gray-box">
 				<img src="img/Writing.png" alt="alt">
@@ -58,7 +60,7 @@
 				<p>One of the most important and extensive 
 				areas of natural science, the science that 
 				studies substances, also their composition</p>
-				<a href="#">Learn more</a>
+				<a href="#" class="Learn-more">Learn more</a>
 			</div>
 			<div class="Reading gray-box">
 				<img src="img/Reading.png" alt="alt">
@@ -66,15 +68,19 @@
 				<p>perception and response actions of the user
 				resulting from the use and/or upcoming use 
 				of the product, system or service</p>
-				<a href="#">Learn more</a>
+				<a href="#" class="Learn-more">Learn more</a>
 			</div>
 			<div class="Listening gray-box">
-				<h3>Listening</h3>
-				<p>perception and response actions of the user
-				resulting from the use and/or upcoming use 
-				of the product, system or service</p>
-				<a href="#">Learn more</a>
-				<img src="img/Listening.png" alt="alt">
+				<div>
+					<h3>Listening</h3>
+					<p>Here you can find activities to practise
+					your listening skills. Listening will help you
+					to improve your understanding</p>
+					<a href="#" class="Learn-more">Learn more</a>
+				</div>
+				<div>
+					<img src="img/Listening.png" alt="alt">
+				</div>
 			</div>
 		</div>
 	</div>
@@ -86,7 +92,7 @@
 				<div class="Numbers">
 					<div class="Pupils">
 						<ol>
-							<li>80</li>
+							<li>800</li>
 							<li>Pupils</li>
 						</ol>
 					</div>
@@ -104,45 +110,41 @@
 					</div>
 				</div>
 			</div>
-			<div class="col-6">
+			<div class="col-5 offset-md-1">
 				<img src="img/Business.png" alt="alt">
 			</div>
 		</div>
 	</div>
-	<div class="row">
+	<div class="row content-center header-pricing">
 		<h2>Pricing</h2>
 	</div>
 	<div class="row">
 		<div class="Pricing">
-			<div class="col-4">
-				<img src="img/Online-test.png" alt="alt">
-				<h4>Self-study online course</h4>
-				<p>Start learning English online in live classes
-				with qualified EC teachers and students 
-				from all over the world.</p>
-				<p><span class="price"><span class="body-price">£5.99</span><sup>per month</sup></span></p>
+			<div class="col-4 grid-Pricing">
+				<div><img src="img/Online-test.png" alt="alt"></div>
+				<div><h4>Self-study online course</h4></div>
+				<div><p>Start learning English online in live classes with qualified EC teachers and students from all over the world.</p></div>
+				<div><a href="#" class="price"><span class="body-price">£5.99</span><sup>per month</sup></a></div>
 			</div>
-			<div class="col-4">
-				<img src="img/Lesson.png" alt="alt">
-				<h4>Live online classes</h4>
-				<p>Interactive group classes with expert
-				teachers. Free 7-day trial</p>
-				<p><span class="price"><span class="body-price">£12.99</span><sup>per month</sup></span></p>
+			<div class="col-4 grid-Pricing">
+				<div><img src="img/Lesson.png" alt="alt"></div>
+				<div><h4>Live online classes</h4></div>
+				<div><p>Interactive group classes with expert teachers. Free 7-day trial</p></div>
+				<div><a href="#" class="price"><span class="body-price">£12.99</span><sup>per month</sup></a></div>
 			</div>
-			<div class="col-4">
-				<img src="img/Webinar.png" alt="alt">
-				<h4>Personal Tuition</h4>
-				<p>Online one-to-one English tutoring – enjoy
-				our first session for only $1</p>
-				<p><span class="price"><span class="body-price">£20.99</span><sup>per month</sup></span></p>
+			<div class="col-4 grid-Pricing">
+				<div><img src="img/Webinar.png" alt="alt"></div>
+				<div><h4>Personal Tuition</h4></div>
+				<div><p>Online one-to-one English tutoring – enjoy our first session for only $1</p></div>
+				<div><a href="#" class="price"><span class="body-price">£20.99</span><sup>per month</sup></a></div>
 			</div>
 		</div>
 	</div>
-	<div class="row">
+	<div class="row header-Contact">
 		<div class="col-4">
 			<img src="img/people.png" alt="alt">
 		</div>
-		<div class="col-md-7 offset-md-1">
+		<div class="col-7 offset-md-1 contact-h2">
 			<h2>Contact Us</h2>
 			<p>Discover your current English level by taking our free online English test.Sign up to our newsletter for learning tips and free resources</p>
 			<form action="#" method="post">
@@ -154,7 +156,13 @@
 	<hr>
 	<footer>
 		<a href="#" class="indent"><span class="Brit">Brit</span><span class="lex">lex</span></a>
-		<p><a href="#">Terms and Conditions</a><a href="#"> • Privacy Policy • </a><a href="#">Cookie Policy</a></p>
+		<ul class="agreement">
+			<li><a href="#">Terms and Conditions</a></li>
+			•
+			<li><a href="#">Privacy Policy</a></li>
+			•
+			<li><a href="#">Cookie Policy</a></li>
+		</ul>
 	</footer>
 </div>
 </body>
