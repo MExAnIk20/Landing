@@ -11,32 +11,91 @@
 	.container{
 		max-width: 929px;
 	}
-	.ot-brit{
-		margin-right: calc(80px + (167 - 140) * ((100vw - 768px) / (992 - 768)));
-	}
 	.menu{
 		font-size: 16px;
-	}
-	.menu li:nth-child(1), .menul li:nth-child(2), .menu li:nth-child(4){
-		margin-right: 25px;
-	}
-	.menu li:nth-child(3){
-		margin-right: 40px;
+		line-height: 24px;
 	}
 	.Talk{
 		font-size: calc(18px + (24 - 18) * ((100vw - 768px) / (992 - 768)));
     	line-height: calc(27px + (36 - 27) * ((100vw - 768px) / (992 - 768)));
-		padding-top: calc(11px + (12 - 11) * ((100vw - 768px) / (992 - 768)));
-		padding-bottom: calc(10px + (11 - 10) * ((100vw - 768px) / (992 - 768)));
-		padding-left: calc(30px + (40 - 30) * ((100vw - 768px) / (992 - 768)));
-		padding-right: calc(30px + (40 - 30) * ((100vw - 768px) / (992 - 768)));
+	}
+	h1{
+		font-size: 48px;
+		line-height: 64px;
+	}
+	h2{
+		font-size: 36px;
+		line-height: 80px;
+	}
+	h3{
+		font-size: 22px;
+		line-height: 80px;
+	}
+	.top-Learn img{
+		max-width: 20%;
+	}
+	.text-prog{
+		font-size: 20px;
+		line-height: 30px;
+	}
+	.bt-started{
+		font-size: 24px;
+		line-height: 36px;
+	}
+	.header-skills p{
+		font-size: 14px;
+		line-height: 21px;
+	}
+	.Learn-more{
+		font-size: 18px;
+		line-height: 27px;
+	}
+	.box-about p{
+		font-size: 16px;
+		line-height: 24px;
+	}
+	ol li:nth-child(1){
+		font-size: 30px;
+		line-height: 80px;
+	}
+	ol li:nth-child(2){
+		font-size: 16px;
+		line-height: 24px;
+	}
+	h4{
+		font-size: 22px;
+		line-height: 34px;
+	}
+	.Pricing p{
+		font-size: 16px;
+		line-height: 24px;
+	}
+	.body-price{
+		font-size: 24px;
+		line-height: 36px;
+	}
+	sup{
+		font-size: 16px;
+		line-height: 24px;
+	}
+	.header-Contact p{
+		font-size: 16px;
+		line-height: 24px;
+	}
+	form input{
+		font-size: 14px;
+		line-height: 21px;
+	}
+	button{
+		font-size: 16px;
+		line-height: 24px;
 	}
 	footer p a{
 		font-size: 16px;
 		color: #8F95A5;
 	}
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
 	.container{
 		max-width: 690px;
 	}
@@ -49,25 +108,45 @@
 	.menu{
 		display: none;
 		flex-direction: column;
-		background-color: #FFFFFF;
+		background-color: lightgray;
 		position: fixed;
 		left: 0;
 		top: 0;
 		width: 55%;
 		height: 100%;
-		text-align: center;
+		text-align: left;
 		z-index: 2;
 		transition: all 1s;
 		padding-top: 20px;
+		padding: 3%;
 	}
 	.menu li a{
 		display: block;
+		max-width: 100%;
 	}
-	.menu li:nth-child(1), .menu li:nth-child(2), .menu li:nth-child(3), .menu li:nth-child(4){
-		margin: 0;
+	.menu li:nth-child(2) a, .menu li:nth-child(3) a, .menu li:nth-child(4) a, .menu li:nth-child(5) a, .menu li:nth-child(6) a{
+		margin-top: 2%;
+		margin-bottom: 2%;
 	}
-	.menu li a:hover{
-		background-color: #575757;
+	.menu li:nth-child(1) a{
+		border-bottom: 1px solid #C4C4C4;
+		max-width: 100%;
+	}
+	.menu li:nth-child(1), .menu li:nth-child(7){
+		display: block;
+	}
+	.menu li:nth-child(7){
+		width: 40%;
+		text-align: center;
+	}
+	.menu li:nth-child(1) a:hover:before, .menu li:nth-child(7) a:hover:before{
+		transform: scaleX(0);
+	}
+	.menu li:nth-child(2), .menu li:nth-child(3), .menu li:nth-child(4), .menu li:nth-child(5){
+		margin-right: 0;
+	}
+	.menu li:nth-child(2) a:hover, .menu li:nth-child(3) a:hover, .menu li:nth-child(4) a:hover, .menu li:nth-child(5) a:hover, .menu li:nth-child(6) a:hover{
+		background-color: #263238;
 		color: #fff;
 	}
 	#checked-menu:checked ~ ul{
@@ -81,6 +160,7 @@
     	right: 0;
     	top: -10px;
 		padding: 10px 0;
+		z-index: 3;
 	}
 	#checked-menu:checked ~ label .burger-line{
 		background-color: transparent;
@@ -96,6 +176,38 @@
 	}
 	.Talk{
 		display: none;
+	}
+	.Brit, .lex{
+		font-size: 30px;
+		line-height: 45px;
+	}
+	h1{
+		font-size: 36px;
+		line-height: 45px;
+	}
+	h2{
+		font-size: 30px;
+		line-height: 80px;
+	}
+	h3{
+		font-size: 20px;
+		line-height: 80px;
+	}
+	.text-prog{
+		font-size: 16px;
+		line-height: 24px;
+	}
+	.bt-started{
+		font-size: 18px;
+		line-height: 27px;
+	}
+	.header-skills p{
+		font-size: 13px;
+		line-height: 20px;
+	}
+	.Learn-more{
+		font-size: 16px;
+		line-height: 24px;
 	}
 }
 @media (max-width: 575px) {

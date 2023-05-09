@@ -14,9 +14,6 @@ header{
     margin: 4% 0;
     gap: 0.5%;
 }
-.index{
-    z-index: 5;
-}
 #checked-menu{
     display: none;
 }
@@ -66,7 +63,7 @@ label{
     flex: 1;
 }
 .ot-brit{
-    margin-right: calc(167px + (253 - 167) * ((100vw - 992px) / (1600 - 992)));
+    margin-right: 18%;
 }
 .menu{
     display: flex;
@@ -75,11 +72,14 @@ label{
     line-height: 30px;
     font-weight: bold;
 }
-.menu li:nth-child(1), .menu li:nth-child(2), .menu li:nth-child(4){
-    margin-right: calc(25px + (36 - 25) * ((100vw - 1200px) / (1600 - 1200)));
+.menu li:nth-child(1), .menu li:nth-child(7){
+    display: none;
 }
-.menu li:nth-child(3){
-    margin-right: calc(45px + (60 - 45) * ((100vw - 1200px) / (1600 - 1200)));
+.menu li:nth-child(2), .menu li:nth-child(3), .menu li:nth-child(5){
+    margin-right: 5%;
+}
+.menu li:nth-child(4){
+    margin-right: 7%;
 }
 .menu li a, .agreement li a{
     position: relative;
@@ -117,7 +117,7 @@ label{
 h1{
     font-size: 64px;
     line-height: 80px;
-    margin-bottom: 40px;
+    margin-bottom: 8%;
     letter-spacing: 0.9px;
 }
 h2{
@@ -136,7 +136,7 @@ h4{
 }
     /* Тело сайта*/
 .top-Learn{
-    padding-top: 40px;
+    padding-top: 3%;
 }
 .relative img{
     position: absolute;
@@ -147,7 +147,7 @@ h4{
     font-size: 24px;
     line-height: 36px;
     color: #8F95A5;
-    margin-bottom: 97px;
+    margin-bottom: 17%;
 }
 .bt-started{
     background: #263238;
@@ -170,7 +170,7 @@ h4{
 .header-skills{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 2fr 1fr;
+    grid-template-rows: 65% 1fr;
     gap: 2%;
 }
 .Speaking{
@@ -183,7 +183,7 @@ h4{
 }
 .Writing img{
     float: right;
-    margin-top: -38px;
+    margin-top: -11%;
 }
 .Reading{
     grid-column: 3/4;
@@ -199,13 +199,16 @@ h4{
 .gray-box{
     background-color: #F5F5F5;
     border-radius: 10px;
-    padding: 30px;
+    padding: 7.2%;
+}
+.gray-1{
+    padding: 3.5%;
 }
 .header-skills p{
     font-size: 16px;
     line-height: 24px;
     color: #8F95A5;
-    margin-bottom: 35px;
+    margin-bottom: 14%;
 }
 .Learn-more{
     background: #263238;
@@ -321,12 +324,13 @@ form input{
 }
 button{
     background: #263238;
+    border: none;
     border-radius: 10px;
     font-size: 20px;
     line-height: 30px;
     color: #FFFFFF;
     cursor: pointer;
-    padding: 3% 11%;
+    padding: 3.1% 11%;
     transition: .4s;
 }
 button:hover {
