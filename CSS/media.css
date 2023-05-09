@@ -90,9 +90,22 @@
 		font-size: 16px;
 		line-height: 24px;
 	}
-	footer p a{
+	.contact-h2 h2{
+		margin-top: 0;
+	}
+	footer .agreement {
 		font-size: 16px;
-		color: #8F95A5;
+		line-height: 24px;
+	}
+	.agreement li a{
+		font-size: 16px;
+		line-height: 24px;
+	}
+	.ot-brit {
+		margin-right: 16%;
+	}
+	.grid-Pricing{
+		grid-template-rows: 310px 65px 100px 60px;
 	}
 }
 @media (max-width: 767px) {
@@ -209,10 +222,225 @@
 		font-size: 16px;
 		line-height: 24px;
 	}
+	.box-about p{
+		font-size: 14px;
+		line-height: 21px;
+	}
+	ol li:nth-child(1){
+		font-size: 22px;
+		line-height: 80px;
+	}
+	ol li:nth-child(2){
+		font-size: 13px;
+		line-height: 20px;
+	}
+	h4{
+		font-size: 20px;
+		line-height: 28px;
+	}
+	.Pricing p{
+		font-size: 14px;
+		line-height: 21px;
+	}
+	.body-price{
+		font-size: 22px;
+		line-height: 33px;
+	}
+	sup{
+		font-size: 16px;
+		line-height: 24px;
+	}
+	.grid-Pricing{
+		grid-template-rows: 240px 55px 100px 55px;
+	}
+	.header-Contact p{
+		font-size: 14px;
+		line-height: 21px;
+	}
+	form input{
+		font-size: 12px;
+		line-height: 18px;
+	}
+	button{
+		font-size: 13px;
+		line-height: 20px;
+	}
+	footer .agreement {
+		font-size: 13px;
+		line-height: 20px;
+	}
+	.agreement li a{
+		font-size: 13px;
+		line-height: 20px;
+	}
 }
 @media (max-width: 575px) {
 	.container{
 		max-width: 510px;
+	}
+	.grid-575 .img-none{
+		display: none;
+	}
+	.grid-575 br{
+		display: none;
+	}
+	.grid-575 .col-5{
+    	max-width: 100%;
+	}
+	.grid-575{
+		display: grid;
+		text-align: center;
+	}
+	.grid-575 div:nth-child(2){
+		grid-column: 1/2;
+    	grid-row: 1/2;
+	}
+	.grid-575 div:nth-child(1){
+		grid-column: 1/2;
+    	grid-row: 2/3;
+	}
+	h1{
+		font-size: 34px;
+		line-height: 45px;
+	}
+	.text-prog{
+		font-size: 16px;
+		line-height: 24px;
+		margin-bottom: 10%;
+	}
+	.bt-started{
+		font-size: 18px;
+		line-height: 27px;
+	}
+	.header-skills{
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: repeat(2, 1fr);
+	}
+	.Speaking{
+		grid-column: 1/2;
+    	grid-row: 1/2;
+	}
+	.Writing{
+		grid-column: 2/3;
+    	grid-row: 1/2;
+	}
+	.Reading{
+		grid-column: 1/2;
+    	grid-row: 2/3;
+	}
+	.Listening{
+		grid-column: 2/3;
+    	grid-row: 2/3;
+		display: grid;
+    	grid-template-columns: 1fr;
+		grid-template-rows: 135px 1fr;
+	}
+	.Listening div:nth-child(2){
+		grid-column: 1/2;
+    	grid-row: 1/2;
+	}
+	.gray-1{
+		padding: 7.2%;
+	}
+	h3{
+		font-size: 18px;
+		line-height: 80px;
+	}
+	.header-skills p{
+		font-size: 13px;
+		line-height: 20px;
+	}
+	.Learn-more{
+		font-size: 14px;
+		line-height: 21px;
+	}
+	h2{
+		font-size: 30px;
+		line-height: 80px;
+	}
+	.box-about{
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr;
+		margin-top: 0;
+	}
+	.box-about div:nth-child(2){
+		grid-column: 1/2;
+		grid-row: 1/2;
+	}
+	.Numbers{
+		display: flex;
+		justify-content: space-around;
+		text-align: center;
+		width: 100%;
+	}
+	.box-about p {
+		font-size: 14px;
+		line-height: 21px;
+		text-align: center;
+	}
+	.Pricing{
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+	}
+	.col-4, .col-5, .col-6, .col-7, .col-8{
+    	max-width: 100%;
+	}
+	.grid-Pricing {
+		grid-template-rows: 315px 40px 55px 60px;
+	}
+	h4{
+		font-size: 24px;
+		line-height: 28px;
+	}
+	.Pricing p{
+		font-size: 14px;
+		line-height: 21px;
+	}
+	.body-price{
+		font-size: 22px;
+		line-height: 33px;
+	}
+	sup{
+		font-size: 16px;
+		line-height: 24px;
+	}
+	.none{
+		display: block;
+		text-align: center;
+	}
+	.none-off{
+		display: none;
+	}
+	.contact-pixel{
+		margin-top: 25%;
+	}
+	.header-Contact{
+		margin-top: 7%;
+		flex-direction: column;
+		text-align: center;
+	}
+	.offset-md-1{
+		margin-left: 0;
+	}
+	form input{
+		margin-right: 1%;
+		font-size: 13px;
+		line-height: 20px;
+	}
+	.header-Contact p{
+		font-size: 16px;
+		line-height: 24px;
+	}
+	button {
+		margin-left: -5%;
+		font-size: 16px;
+		line-height: 24px;
+	}
+	.agreement li a {
+		font-size: 12px;
+		line-height: 18px;
 	}
 }
 @media (max-width: 320px) {

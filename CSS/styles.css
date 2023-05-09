@@ -14,7 +14,7 @@ header{
     margin: 4% 0;
     gap: 0.5%;
 }
-#checked-menu{
+#checked-menu, .none{
     display: none;
 }
 label{
@@ -170,7 +170,7 @@ h4{
 .header-skills{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 65% 1fr;
+    grid-template-rows: 2fr 1fr;
     gap: 2%;
 }
 .Speaking{
@@ -251,6 +251,7 @@ ol li:nth-child(2){
     display: flex;
     justify-content: space-between;
     text-align: center;
+    width: 90%;
 }
 .header-pricing{
     margin: 13.5% 0 5% 0;
@@ -273,7 +274,7 @@ ol li:nth-child(2){
 .price{
     background: #EEEEEE;
     border-radius: 5px;
-    padding: 15px 20px 5px;
+    padding: 4% 6% 2%;
 }
 .price:hover{
     background-color: gainsboro;
@@ -330,7 +331,7 @@ button{
     line-height: 30px;
     color: #FFFFFF;
     cursor: pointer;
-    padding: 3.1% 11%;
+    padding: 3.5% 11%;
     transition: .4s;
 }
 button:hover {
